@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SafeAlarmClock">
         <activity
+            android:name=".activitys.CreateAlarmActivity"
+            android:exported="false" />
+        <activity
             android:name=".activitys.MainActivity"
             android:exported="true">
             <intent-filter>
