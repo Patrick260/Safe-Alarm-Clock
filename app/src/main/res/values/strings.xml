@@ -17,5 +17,4 @@
 
 <resources>
     <string name="app_name">Safe-Alarm-Clock</string>
-    <string name="btn_create_alarm">Create Alarm</string>
 </resources>
