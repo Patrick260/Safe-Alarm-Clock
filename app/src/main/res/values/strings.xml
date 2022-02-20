@@ -21,4 +21,5 @@
     <string name="et_alarm_name_hint">Alarm name</string>
     <string name="cb_recurring_alarm_text">Recurring alarm</string>
     <string name="btn_schedule_alarm_text">Schedule alarm</string>
+    <string name="btn_snooze_5_min_text">Snooze 5 min</string>
 </resources>
