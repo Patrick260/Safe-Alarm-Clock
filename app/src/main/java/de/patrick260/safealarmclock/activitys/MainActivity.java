@@ -17,7 +17,9 @@
 
 package de.patrick260.safealarmclock.activitys;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -30,6 +32,14 @@ public class MainActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        findViewById(R.id.fabtn_schedule_alarm).setOnClickListener(this::scheduleAlarm);
+
+    }
+
+    public void scheduleAlarm(View view) {
+
+        startActivity(new Intent(this, ScheduleAlarmActivity.class));
 
     }
 
