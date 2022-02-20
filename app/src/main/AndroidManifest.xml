@@ -34,6 +34,9 @@
             android:exported="true" />
 
         <activity
+            android:name=".activitys.AlarmActivity"
+            android:exported="false" />
+        <activity
             android:name=".activitys.ScheduleAlarmActivity"
             android:exported="false" />
         <activity
