@@ -16,7 +16,7 @@
 -->
 
 <resources>
-    <string name="app_name">Safe-Alarm-Clock</string>
+    <string name="app_name">Safe Alarm Clock</string>
     <string name="tv_schedule_alarm_text">Schedule alarm</string>
     <string name="et_alarm_name_hint">Alarm name</string>
     <string name="cb_recurring_alarm_text">Recurring alarm</string>
