@@ -37,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+
     public void scheduleAlarm(View view) {
 
         startActivity(new Intent(this, ScheduleAlarmActivity.class));
