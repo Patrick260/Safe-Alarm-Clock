@@ -1,4 +1,4 @@
-<!--
+/*
     Copyright (C) 2022  Patrick260
 
     This program is free software: you can redistribute it and/or modify
@@ -13,12 +13,24 @@
 
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <https://www.gnu.org/licenses/>.
--->
+*/
 
-<resources>
-    <string name="app_name">Safe-Alarm-Clock</string>
-    <string name="tv_schedule_alarm_text">Schedule alarm</string>
-    <string name="et_alarm_name_hint">Alarm name</string>
-    <string name="cb_recurring_alarm_text">Recurring alarm</string>
-    <string name="btn_schedule_alarm_text">Schedule alarm</string>
-</resources>
+package de.patrick260.safealarmclock.activitys;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle;
+
+import de.patrick260.safealarmclock.R;
+
+public class ScheduleAlarmActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_schedule_alarm);
+
+    }
+
+}
