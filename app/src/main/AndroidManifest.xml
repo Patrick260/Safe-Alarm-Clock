@@ -30,18 +30,15 @@
 
         <receiver
             android:name=".util.AlarmReceiver"
-            android:enabled="true"
-            android:exported="true" />
+            android:enabled="true" />
 
         <activity
-            android:name=".activitys.AlarmActivity"
-            android:exported="false" />
+            android:name=".activitys.AlarmActivity" />
         <activity
-            android:name=".activitys.ScheduleAlarmActivity"
-            android:exported="false" />
+            android:name=".activitys.ScheduleAlarmActivity" />
         <activity
             android:name=".activitys.MainActivity"
-            android:exported="true">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
