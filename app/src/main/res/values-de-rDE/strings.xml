@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Safe Alarm Clock</string>
+    <string name="app_name">Sicherer Wecker</string>
     <string name="tv_schedule_alarm_text">Alarm erstellen</string>
     <string name="et_alarm_name_hint">Alarm Name</string>
     <string name="cb_recurring_alarm_text">Wiederholender Alarm</string>
