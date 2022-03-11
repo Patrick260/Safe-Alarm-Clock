@@ -73,6 +73,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:maxImageSize="50dp"
-        tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck" />
+        tools:ignore="ContentDescription,ImageContrastCheck,SpeakableTextPresentCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
