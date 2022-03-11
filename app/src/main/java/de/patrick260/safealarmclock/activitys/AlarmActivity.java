@@ -23,10 +23,10 @@ import android.os.Bundle;
 
 import de.patrick260.safealarmclock.R;
 
-public class AlarmActivity extends AppCompatActivity {
+public final class AlarmActivity extends AppCompatActivity {
 
     @Override
-    protected final void onCreate(final Bundle savedInstanceState) {
+    protected void onCreate(final Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_alarm);

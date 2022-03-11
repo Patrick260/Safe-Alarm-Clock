@@ -25,10 +25,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import de.patrick260.safealarmclock.R;
 
-public class MainActivity extends AppCompatActivity {
+public final class MainActivity extends AppCompatActivity {
 
     @Override
-    protected final void onCreate(final Bundle savedInstanceState) {
+    protected void onCreate(final Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    public final void scheduleAlarm(final View view) {
+    public void scheduleAlarm(final View view) {
 
         startActivity(new Intent(this, ScheduleAlarmActivity.class));
 
