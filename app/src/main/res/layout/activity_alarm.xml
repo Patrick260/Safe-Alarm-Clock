@@ -63,7 +63,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:maxImageSize="40dp"
         app:srcCompat="@android:drawable/ic_delete"
-        tools:ignore="SpeakableTextPresentCheck" />
+        tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
 
     <Button
         android:id="@+id/btn_snooz_5_min"
