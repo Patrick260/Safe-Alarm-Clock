@@ -21,18 +21,31 @@ public final class Alarm {
 
     private String alarm_name;
 
+    private int hour;
+    private int minute;
+
     private boolean recurring;
+    private boolean enabled;
 
 
-    public Alarm(final String alarm_name, final boolean recurring) {
+    public Alarm(final String alarm_name, final int hour, final int minute, final boolean recurring, final boolean enabled) {
 
         this.alarm_name = alarm_name;
+        this.hour = hour;
+        this.minute = minute;
         this.recurring = recurring;
+        this.enabled = enabled;
 
     }
 
 
     public void schedule() {
+
+
+
+    }
+
+    public void cancel() {
 
 
 
@@ -53,6 +66,30 @@ public final class Alarm {
 
     public void setRecurring(final boolean recurring) {
         this.recurring = recurring;
+    }
+
+    public boolean isEnabled() {
+        return enabled;
+    }
+
+    public void setEnabled(boolean enabled) {
+        this.enabled = enabled;
+    }
+
+    public int getHour() {
+        return hour;
+    }
+
+    public void setHour(int hour) {
+        this.hour = hour;
+    }
+
+    public int getMinute() {
+        return minute;
+    }
+
+    public void setMinute(int minute) {
+        this.minute = minute;
     }
 
 }
