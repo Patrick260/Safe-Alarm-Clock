@@ -88,9 +88,13 @@ public final class Alarm {
 
     }
 
-    public void cancel() {
+    public void cancel(final Context context) {
 
+        final AlarmManager alarmManager = (AlarmManager) context.getSystemService(Context.ALARM_SERVICE);
 
+        alarmManager.cancel(PendingIntent.getBroadcast(context, alarmId, new Intent(context, AlarmReceiver.class), 0));
+
+        enabled = false;
 
     }
 
