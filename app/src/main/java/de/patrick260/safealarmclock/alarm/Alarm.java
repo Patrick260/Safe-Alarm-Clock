@@ -100,11 +100,15 @@ public final class Alarm {
 
 
     public int getAlarmId() {
+
         return alarmId;
+
     }
 
     public void setAlarmId(final int alarmId) {
+
         this.alarmId = alarmId;
+
     }
 
     public String getAlarmName() {
