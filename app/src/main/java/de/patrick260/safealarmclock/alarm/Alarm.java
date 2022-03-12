@@ -53,43 +53,63 @@ public final class Alarm {
 
 
     public String getAlarm_name() {
+
         return alarm_name;
+
     }
 
     public void setAlarm_name(final String alarm_name) {
+
         this.alarm_name = alarm_name;
+
     }
 
     public boolean isRecurring() {
+
         return recurring;
+
     }
 
     public void setRecurring(final boolean recurring) {
+
         this.recurring = recurring;
+
     }
 
     public boolean isEnabled() {
+
         return enabled;
+
     }
 
     public void setEnabled(final boolean enabled) {
+
         this.enabled = enabled;
+
     }
 
     public int getHour() {
+
         return hour;
+
     }
 
     public void setHour(final int hour) {
+
         this.hour = hour;
+
     }
 
     public int getMinute() {
+
         return minute;
+
     }
 
     public void setMinute(final int minute) {
+
         this.minute = minute;
+
     }
 
 }
