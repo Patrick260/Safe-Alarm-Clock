@@ -39,14 +39,13 @@ public final class Alarm {
     private boolean enabled;
 
 
-    public Alarm(final int alarmId, final String alarmName, final int hour, final int minute, final boolean recurring, final boolean enabled) {
+    public Alarm(final int alarmId, final String alarmName, final int hour, final int minute, final boolean recurring) {
 
         this.alarmId = alarmId;
         this.alarmName = alarmName;
         this.hour = hour;
         this.minute = minute;
         this.recurring = recurring;
-        this.enabled = enabled;
 
     }
 
@@ -132,18 +131,6 @@ public final class Alarm {
     public void setRecurring(final boolean recurring) {
 
         this.recurring = recurring;
-
-    }
-
-    public boolean isEnabled() {
-
-        return enabled;
-
-    }
-
-    public void setEnabled(final boolean enabled) {
-
-        this.enabled = enabled;
 
     }
 
