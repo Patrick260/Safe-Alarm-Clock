@@ -29,8 +29,7 @@
         android:theme="@style/Theme.SafeAlarmClock">
 
         <receiver
-            android:name=".util.AlarmReceiver"
-            android:enabled="true" />
+            android:name=".util.AlarmReceiver" />
 
         <activity
             android:name=".activitys.AlarmActivity" />
