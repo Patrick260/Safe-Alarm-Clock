@@ -19,7 +19,7 @@ package de.patrick260.safealarmclock.alarm;
 
 public final class Alarm {
 
-    private String alarm_name;
+    private String alarmName;
 
     private int hour;
     private int minute;
@@ -28,9 +28,9 @@ public final class Alarm {
     private boolean enabled;
 
 
-    public Alarm(final String alarm_name, final int hour, final int minute, final boolean recurring, final boolean enabled) {
+    public Alarm(final String alarmName, final int hour, final int minute, final boolean recurring, final boolean enabled) {
 
-        this.alarm_name = alarm_name;
+        this.alarmName = alarmName;
         this.hour = hour;
         this.minute = minute;
         this.recurring = recurring;
@@ -52,15 +52,15 @@ public final class Alarm {
     }
 
 
-    public String getAlarm_name() {
+    public String getAlarmName() {
 
-        return alarm_name;
+        return alarmName;
 
     }
 
-    public void setAlarm_name(final String alarm_name) {
+    public void setAlarmName(final String alarmName) {
 
-        this.alarm_name = alarm_name;
+        this.alarmName = alarmName;
 
     }
 
