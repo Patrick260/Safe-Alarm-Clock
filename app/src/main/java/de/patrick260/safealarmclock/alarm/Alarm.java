@@ -17,7 +17,18 @@
 
 package de.patrick260.safealarmclock.alarm;
 
+import android.app.AlarmManager;
+import android.app.PendingIntent;
+import android.content.Context;
+import android.content.Intent;
+
+import java.util.Calendar;
+
+import de.patrick260.safealarmclock.util.AlarmReceiver;
+
 public final class Alarm {
+
+    private int alarmId;
 
     private String alarmName;
 
@@ -28,8 +39,9 @@ public final class Alarm {
     private boolean enabled;
 
 
-    public Alarm(final String alarmName, final int hour, final int minute, final boolean recurring, final boolean enabled) {
+    public Alarm(final int alarmId, final String alarmName, final int hour, final int minute, final boolean recurring, final boolean enabled) {
 
+        this.alarmId = alarmId;
         this.alarmName = alarmName;
         this.hour = hour;
         this.minute = minute;
@@ -39,9 +51,40 @@ public final class Alarm {
     }
 
 
-    public void schedule() {
+    public void schedule(final Context context) {
 
+        final AlarmManager alarmManager = (AlarmManager) context.getSystemService(Context.ALARM_SERVICE);
 
+        final Intent intent = new Intent(context, AlarmReceiver.class);
+        intent.putExtra("RECURRING", recurring);
+        intent.putExtra("ALARM_NAME", alarmName);
+
+        final PendingIntent pendingIntent = PendingIntent.getBroadcast(context, alarmId, intent, 0);
+
+        final Calendar calendar = Calendar.getInstance();
+        calendar.setTimeInMillis(System.currentTimeMillis());
+        calendar.set(Calendar.HOUR_OF_DAY, hour);
+        calendar.set(Calendar.MINUTE, minute);
+        calendar.set(Calendar.SECOND, 0);
+        calendar.set(Calendar.MILLISECOND, 0);
+
+        if (calendar.getTimeInMillis() <= System.currentTimeMillis()) {
+
+            calendar.set(Calendar.DAY_OF_MONTH, calendar.get(Calendar.DAY_OF_MONTH) + 1);
+
+        }
+
+        if (recurring) {
+
+            alarmManager.setRepeating(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(), 86400000, pendingIntent);
+
+        } else {
+
+            alarmManager.setExactAndAllowWhileIdle(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(), pendingIntent);
+
+        }
+
+        enabled = true;
 
     }
 
@@ -51,6 +94,14 @@ public final class Alarm {
 
     }
 
+
+    public int getAlarmId() {
+        return alarmId;
+    }
+
+    public void setAlarmId(final int alarmId) {
+        this.alarmId = alarmId;
+    }
 
     public String getAlarmName() {
 
