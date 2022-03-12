@@ -72,7 +72,7 @@ public final class Alarm {
         return enabled;
     }
 
-    public void setEnabled(boolean enabled) {
+    public void setEnabled(final boolean enabled) {
         this.enabled = enabled;
     }
 
@@ -80,7 +80,7 @@ public final class Alarm {
         return hour;
     }
 
-    public void setHour(int hour) {
+    public void setHour(final int hour) {
         this.hour = hour;
     }
 
@@ -88,7 +88,7 @@ public final class Alarm {
         return minute;
     }
 
-    public void setMinute(int minute) {
+    public void setMinute(final int minute) {
         this.minute = minute;
     }
 
