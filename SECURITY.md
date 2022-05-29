@@ -4,7 +4,7 @@
 
 | Version | Supported          |
 | ------- | ------------------ |
-| x.x.x   | <placeholder>      |
+| x.x.x   | placeholder        |
 
 ## Reporting a Vulnerability
 
